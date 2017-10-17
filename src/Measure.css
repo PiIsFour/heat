@@ -1,0 +1,12 @@
+.Measure {
+	border: 2px solid gray;
+	padding: 1em;
+	margin: 1em;
+	text-align: center;
+}
+
+.Measure > input {
+	text-align: right;
+	margin-left: .5em;
+	margin-right: .5em;
+}

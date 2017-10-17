@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MeasureGroup renders and matches our snapshot 1`] = `
+<div
+  className="MeasureGroup"
+  style={undefined}
+>
+  testname
+  <div
+    className="Measure"
+    style={
+      Object {
+        "backgroundColor": "gray",
+      }
+    }
+  >
+    <input
+      checked={false}
+      className="input"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <math
+      xmlns="http://www.w3.org/1998/Math/MathML"
+    >
+      <mrow>
+        <msub>
+          <mi>
+            T
+          </mi>
+          <mi>
+            W in
+          </mi>
+        </msub>
+      </mrow>
+    </math>
+    <input
+      className="value"
+      onChange={[Function]}
+      readOnly={true}
+      type="text"
+      value={42}
+    />
+    <span
+      className="unit"
+    >
+      kg
+    </span>
+    <div>
+      
+    </div>
+  </div>
+</div>
+`;

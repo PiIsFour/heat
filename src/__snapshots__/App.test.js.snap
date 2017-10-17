@@ -1,0 +1,603 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders and matches our snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="MeasureGroup"
+    style={
+      Object {
+        "gridColumn": "3 / span 1",
+        "gridRowEnd": "span 2",
+      }
+    }
+  >
+    Wasser
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              W in
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={20}
+      />
+      <span
+        className="unit"
+      >
+        °C
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              W out
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={30}
+      />
+      <span
+        className="unit"
+      >
+        °C
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              c
+            </mi>
+            <mi>
+              W
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={4.18}
+      />
+      <span
+        className="unit"
+      >
+        kJ/kgK
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              M
+            </mi>
+            <mi>
+              W
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={1}
+      />
+      <span
+        className="unit"
+      >
+        kg/s
+      </span>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div
+    className="MeasureGroup"
+    style={
+      Object {
+        "gridColumn": "1 / span 1",
+        "gridRowEnd": "span 2",
+      }
+    }
+  >
+    Öl
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              O in
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={60}
+      />
+      <span
+        className="unit"
+      >
+        °C
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              O out
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={40}
+      />
+      <span
+        className="unit"
+      >
+        °C
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              c
+            </mi>
+            <mi>
+              O
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={2}
+      />
+      <span
+        className="unit"
+      >
+        kJ/kgK
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              M
+            </mi>
+            <mi>
+              O
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={1}
+      />
+      <span
+        className="unit"
+      >
+        kg/s
+      </span>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div
+    className="MeasureGroup"
+    style={
+      Object {
+        "gridColumn": "2 / span 1",
+      }
+    }
+  >
+    Leistung
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <mi>
+            P
+          </mi>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={55}
+      />
+      <span
+        className="unit"
+      >
+        kW
+      </span>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div
+    className="MeasureGroup"
+    style={
+      Object {
+        "gridColumn": "2 / span 1",
+        "gridRowEnd": "span 2",
+      }
+    }
+  >
+    Kühler
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <mi>
+            A
+          </mi>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={1}
+      />
+      <span
+        className="unit"
+      >
+        m²
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <mi>
+            k
+          </mi>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={1}
+      />
+      <span
+        className="unit"
+      >
+        kW/m²K
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              log
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={1}
+      />
+      <span
+        className="unit"
+      >
+        K
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <mi>
+            alpha
+          </mi>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={1}
+      />
+      <span
+        className="unit"
+      >
+        
+      </span>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
