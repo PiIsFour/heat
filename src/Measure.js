@@ -9,7 +9,7 @@ class Measure extends Component{
 	}
 	handleValueUpdate(event){
 		const {valueChanged, name} = this.props.state;
-		valueChanged(name, Number(event.target.value));
+		valueChanged(name, event.target.value);
 	}
 	handleInputUpdate(event){
 		const {inputToggled, name, input} = this.props.state;

@@ -28,7 +28,7 @@ class calculator{
 				return;
 			}
 			changed = true;
-			state[f.output].value = f.fn(f.inputs.reduce((sum, i) => ({...sum, [i]: state[i].value}), {}));
+			state[f.output].value = f.fn(f.inputs.reduce((sum, i) => ({...sum, [i]: Number(state[i].value)}), {}));
 			state[f.output].calculated = true;
 			state[f.output].formul = f.formul;
 		}
