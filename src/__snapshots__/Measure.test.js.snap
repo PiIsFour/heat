@@ -12,6 +12,7 @@ exports[`Measure renders and matches our snapshot 1`] = `
   <input
     checked={false}
     className="input"
+    disabled={undefined}
     onChange={[Function]}
     type="checkbox"
   />
@@ -31,6 +32,7 @@ exports[`Measure renders and matches our snapshot 1`] = `
   </math>
   <input
     className="value"
+    disabled={true}
     onChange={[Function]}
     readOnly={true}
     type="text"

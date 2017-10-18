@@ -17,6 +17,7 @@ exports[`MeasureGroup renders and matches our snapshot 1`] = `
     <input
       checked={false}
       className="input"
+      disabled={false}
       onChange={[Function]}
       type="checkbox"
     />
@@ -36,6 +37,7 @@ exports[`MeasureGroup renders and matches our snapshot 1`] = `
     </math>
     <input
       className="value"
+      disabled={true}
       onChange={[Function]}
       readOnly={true}
       type="text"
