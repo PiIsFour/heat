@@ -8,6 +8,57 @@ exports[`App renders and matches our snapshot 1`] = `
     className="MeasureGroup"
     style={
       Object {
+        "gridColumn": "2 / span 1",
+      }
+    }
+  >
+    Leistung
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <mi>
+            P
+          </mi>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        disabled={true}
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={55}
+      />
+      <span
+        className="unit"
+      >
+        kW
+      </span>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div
+    className="MeasureGroup"
+    style={
+      Object {
         "gridColumn": "3 / span 1",
         "gridRowEnd": "span 2",
       }
@@ -193,6 +244,98 @@ exports[`App renders and matches our snapshot 1`] = `
         className="unit"
       >
         kg/s
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              p
+            </mi>
+            <mi>
+              W
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        disabled={true}
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={1}
+      />
+      <span
+        className="unit"
+      >
+        kg/l
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              Q
+            </mi>
+            <mi>
+              W
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        disabled={true}
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={60}
+      />
+      <span
+        className="unit"
+      >
+        l/min
       </span>
       <div>
         
@@ -393,16 +536,6 @@ exports[`App renders and matches our snapshot 1`] = `
         
       </div>
     </div>
-  </div>
-  <div
-    className="MeasureGroup"
-    style={
-      Object {
-        "gridColumn": "2 / span 1",
-      }
-    }
-  >
-    Leistung
     <div
       className="Measure"
       style={
@@ -422,9 +555,14 @@ exports[`App renders and matches our snapshot 1`] = `
         xmlns="http://www.w3.org/1998/Math/MathML"
       >
         <mrow>
-          <mi>
-            P
-          </mi>
+          <msub>
+            <mi>
+              p
+            </mi>
+            <mi>
+              O
+            </mi>
+          </msub>
         </mrow>
       </math>
       <input
@@ -433,12 +571,58 @@ exports[`App renders and matches our snapshot 1`] = `
         onChange={[Function]}
         readOnly={true}
         type="text"
-        value={55}
+        value={1}
       />
       <span
         className="unit"
       >
-        kW
+        kg/l
+      </span>
+      <div>
+        
+      </div>
+    </div>
+    <div
+      className="Measure"
+      style={
+        Object {
+          "backgroundColor": "gray",
+        }
+      }
+    >
+      <input
+        checked={false}
+        className="input"
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <mrow>
+          <msub>
+            <mi>
+              Q
+            </mi>
+            <mi>
+              O
+            </mi>
+          </msub>
+        </mrow>
+      </math>
+      <input
+        className="value"
+        disabled={true}
+        onChange={[Function]}
+        readOnly={true}
+        type="text"
+        value={60}
+      />
+      <span
+        className="unit"
+      >
+        l/min
       </span>
       <div>
         
@@ -450,7 +634,6 @@ exports[`App renders and matches our snapshot 1`] = `
     style={
       Object {
         "gridColumn": "2 / span 1",
-        "gridRowEnd": "span 2",
       }
     }
   >

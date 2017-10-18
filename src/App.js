@@ -22,6 +22,10 @@ class App extends Component {
     .compose("k", "kW/m²K", 1, <mrow><mi>k</mi></mrow>)
     .compose("tlog", "K", 1, <mrow><msub><mi>T</mi><mi>log</mi></msub></mrow>)
     .compose("alpha", "", 1, <mrow><mi>alpha</mi></mrow>)
+    .compose("pw", "kg/l", 1, <mrow><msub><mi>p</mi><mi>W</mi></msub></mrow>)
+    .compose("po", "kg/l", 1, <mrow><msub><mi>p</mi><mi>O</mi></msub></mrow>)
+    .compose("Qw", "l/min", 60, <mrow><msub><mi>Q</mi><mi>W</mi></msub></mrow>)
+    .compose("Qo", "l/min", 60, <mrow><msub><mi>Q</mi><mi>O</mi></msub></mrow>)
     state.all = {
       valueChanged: (name, value) => {
         const state = {...this.state};
@@ -59,13 +63,19 @@ class App extends Component {
     .add("k", ["P", "A", "tlog"], i => i.P/i.A/i.tlog, <mrow><mi>k</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mi>A</mi><mo>*</mo><msub><mi>T</mi><mi>log</mi></msub></mrow></mfrac></mrow>)
     .add("alpha", ["A", "k", "co", "cw", "Mo", "Mw"], i => Math.exp(i.A*i.k*((1/i.co/i.Mo)-(1/i.cw/i.Mw))), <mrow><mi>alpha</mi><mo>=</mo><mo>exp</mo><mo>(</mo><mi>A</mi><mo>*</mo><mi>k</mi><mo>*</mo><mo>(</mo><mfrac><mn>1</mn><mrow><msub><mi>c</mi><mi>O</mi></msub><mo>*</mo><msub><mi>M</mi><mi>O</mi></msub></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><msub><mi>c</mi><mi>W</mi></msub><mo>*</mo><msub><mi>M</mi><mi>W</mi></msub></mrow></mfrac><mo>)</mo><mo>)</mo></mrow>)
     .add("P", ["alpha", "toin", "twin", "co", "cw", "Mo", "Mw"], i => (i.alpha-1)*(i.toin-i.twin)/((i.alpha/i.co/i.Mo)-(1/i.cw/i.Mw)), <mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mo>(</mo><mi>alpha</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>(</mo><msub><mi>T</mi><mi>O in</mi></msub><mo>-</mo><msub><mi>T</mi><mi>W in</mi></msub><mo>)</mo></mrow><mrow><mo>(</mo><mfrac><mi>alpha</mi><mrow><msub><mi>c</mi><mi>O</mi></msub><mo>*</mo><msub><mi>M</mi><mi>O</mi></msub></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><msub><mi>c</mi><mi>W</mi></msub><mo>*</mo><msub><mi>M</mi><mi>W</mi></msub></mrow></mfrac><mo>)</mo></mrow></mfrac></mrow>)
+    .add("Mw", ["pw", "Qw"], i => i.pw*i.Qw/60, <mrow><msub><mi>M</mi><mi>W</mi></msub><mo>=</mo><msub><mi>p</mi><mi>W</mi></msub><mo>*</mo><msub><mi>Q</mi><mi>W</mi></msub></mrow>)
+    .add("Mo", ["po", "Qo"], i => i.po*i.Qo/60, <mrow><msub><mi>M</mi><mi>O</mi></msub><mo>=</mo><msub><mi>p</mi><mi>O</mi></msub><mo>*</mo><msub><mi>Q</mi><mi>O</mi></msub></mrow>)
+    .add("pw", ["Mw", "Qw"], i => i.Mw/i.Qw*60, <mrow><msub><mi>p</mi><mi>W</mi></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>W</mi></msub><msub><mi>Q</mi><mi>W</mi></msub></mfrac></mrow>)
+    .add("po", ["Mo", "Qo"], i => i.Mo/i.Qo*60, <mrow><msub><mi>p</mi><mi>O</mi></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>O</mi></msub><msub><mi>Q</mi><mi>O</mi></msub></mfrac></mrow>)
+    .add("Qw", ["Mw", "pw"], i => i.Mw/i.pw*60, <mrow><msub><mi>Q</mi><mi>W</mi></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>W</mi></msub><msub><mi>p</mi><mi>W</mi></msub></mfrac></mrow>)
+    .add("Qo", ["Mo", "po"], i => i.Mo/i.po*60, <mrow><msub><mi>Q</mi><mi>O</mi></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>O</mi></msub><msub><mi>p</mi><mi>O</mi></msub></mfrac></mrow>)
   }
   render() {
     const opt = [
-      {name: "Wasser", childs: ["twin", "twout", "cw", "Mw"], style: {gridColumn: "3 / span 1", gridRowEnd: "span 2"}},
-      {name: "Öl", childs: ["toin", "toout", "co", "Mo"], style: {gridColumn: "1 / span 1", gridRowEnd: "span 2"}},
       {name: "Leistung", childs: ["P"], style: {gridColumn: "2 / span 1"}},
-      {name: "Kühler", childs: ["A", "k", "tlog", "alpha"], style: {gridColumn: "2 / span 1", gridRowEnd: "span 2"}},
+      {name: "Wasser", childs: ["twin", "twout", "cw", "Mw", "pw", "Qw"], style: {gridColumn: "3 / span 1", gridRowEnd: "span 2"}},
+      {name: "Öl", childs: ["toin", "toout", "co", "Mo", "po", "Qo"], style: {gridColumn: "1 / span 1", gridRowEnd: "span 2"}},
+      {name: "Kühler", childs: ["A", "k", "tlog", "alpha"], style: {gridColumn: "2 / span 1"}},
     ];
     return (
       <div className="App">
