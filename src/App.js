@@ -73,9 +73,12 @@ class App extends Component {
   render() {
     const opt = [
       {name: "Leistung", childs: ["P"], style: {gridColumn: "2 / span 1"}},
-      {name: "Wasser", childs: ["twin", "twout", "cw", "Mw", "pw", "Qw"], style: {gridColumn: "3 / span 1", gridRowEnd: "span 2"}},
-      {name: "Öl", childs: ["toin", "toout", "co", "Mo", "po", "Qo"], style: {gridColumn: "1 / span 1", gridRowEnd: "span 2"}},
-      {name: "Kühler", childs: ["A", "k", "tlog", "alpha"], style: {gridColumn: "2 / span 1"}},
+      {name: "Öl", childs: ["toin", "toout", "Mo", "Qo"], style: {gridColumn: "1 / span 1", gridRowEnd: "span 2"}},
+      {name: "Wasser", childs: ["twin", "twout", "Mw", "Qw"], style: {gridColumn: "3 / span 1", gridRowEnd: "span 2"}},
+      {name: "Kühler", childs: ["A", "k"], style: {gridColumn: "2 / span 1"}},
+      {name: "Öl Konstanten", childs: ["co", "po"], style: {gridColumn: "1 / span 1"}},
+      {name: "Wasser Konstanten", childs: ["cw", "pw"], style: {gridColumn: "3 / span 1"}},
+      {name: "Automatische Größen", childs: ["tlog", "alpha"], style: {gridColumn: "2 / span 1"}},
     ];
     return (
       <div className="App">
