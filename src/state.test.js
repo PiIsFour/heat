@@ -4,10 +4,10 @@ import composeState from './state'
 describe('state', () => {
 	it('returns a state with the item', () => {
 		const state = composeState()
-			.compose('twin', 'kg', 42, <mrow><msub><mi>T</mi><mi>W in</mi></msub></mrow>)
+			.compose('twin', 'kg', 42, true, <mrow><msub><mi>T</mi><mi>W in</mi></msub></mrow>)
 		expect(state.twin).toEqual({
 			unit: 'kg',
-			input: false,
+			input: true,
 			calculated: false,
 			value: 42,
 			symbol:
@@ -22,8 +22,8 @@ describe('state', () => {
 
 	it('.compose() is chainable', () => {
 		const state = composeState()
-			.compose('twin', 'kg', 42, <mrow><msub><mi>T</mi><mi>W in</mi></msub></mrow>)
-			.compose('twout', 'kg', 7, <mrow><msub><mi>T</mi><mi>W out</mi></msub></mrow>)
+			.compose('twin', 'kg', 42, false, <mrow><msub><mi>T</mi><mi>W in</mi></msub></mrow>)
+			.compose('twout', 'kg', 7, false, <mrow><msub><mi>T</mi><mi>W out</mi></msub></mrow>)
 		expect(state.twin.value).toEqual(42)
 		expect(state.twout.value).toEqual(7)
 	})

@@ -1,10 +1,10 @@
 import React from 'react'
 
 class State {
-	compose (name, unit, value, symbol) {
+	compose (name, unit, value, active, symbol) {
 		this[name] = {
 			unit: unit,
-			input: false,
+			input: active,
 			calculated: false,
 			value: value,
 			symbol:

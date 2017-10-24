@@ -8,14 +8,21 @@ exports[`MeasureGroup renders and matches our snapshot 1`] = `
   testname
   <div
     className="Measure"
-    style={
-      Object {
-        "backgroundColor": "gray",
-      }
-    }
+    style={Object {}}
   >
     <input
-      checked={false}
+      checked={
+        <mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              W in
+            </mi>
+          </msub>
+        </mrow>
+      }
       className="input"
       disabled={false}
       onChange={[Function]}
@@ -23,23 +30,12 @@ exports[`MeasureGroup renders and matches our snapshot 1`] = `
     />
     <math
       xmlns="http://www.w3.org/1998/Math/MathML"
-    >
-      <mrow>
-        <msub>
-          <mi>
-            T
-          </mi>
-          <mi>
-            W in
-          </mi>
-        </msub>
-      </mrow>
-    </math>
+    />
     <input
       className="value"
-      disabled={true}
+      disabled={false}
       onChange={[Function]}
-      readOnly={true}
+      readOnly={false}
       type="text"
       value={42}
     />
