@@ -5,45 +5,52 @@ exports[`MeasureGroup renders and matches our snapshot 1`] = `
   className="MeasureGroup"
   style={undefined}
 >
-  testname
+  <div
+    className="name"
+  >
+    testname
+  </div>
   <div
     className="Measure"
     style={Object {}}
   >
-    <input
-      checked={
-        <mrow>
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              W in
-            </mi>
-          </msub>
-        </mrow>
-      }
-      className="input"
-      disabled={false}
-      onChange={[Function]}
-      type="checkbox"
-    />
-    <math
-      xmlns="http://www.w3.org/1998/Math/MathML"
-    />
-    <input
-      className="value"
-      disabled={false}
-      onChange={[Function]}
-      readOnly={false}
-      type="text"
-      value={42}
-    />
-    <span
-      className="unit"
-    >
-      kg
-    </span>
+    <div />
+    <div>
+      <input
+        checked={
+          <mrow>
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                W in
+              </mi>
+            </msub>
+          </mrow>
+        }
+        className="input"
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      />
+      <input
+        className="value"
+        disabled={false}
+        onChange={[Function]}
+        readOnly={false}
+        type="text"
+        value={42}
+      />
+      <span
+        className="unit"
+      >
+        kg
+      </span>
+    </div>
     <div>
       
     </div>

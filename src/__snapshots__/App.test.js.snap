@@ -12,7 +12,11 @@ exports[`App renders and matches our snapshot 1`] = `
       }
     }
   >
-    Leistung
+    <div
+      className="name"
+    >
+      Leistung
+    </div>
     <div
       className="Measure"
       style={
@@ -21,35 +25,40 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <mi>
-            P
-          </mi>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={55}
-      />
-      <span
-        className="unit"
-      >
-        kW
-      </span>
+      <div>
+        Leistung
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <mi>
+              P
+            </mi>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={55}
+        />
+        <span
+          className="unit"
+        >
+          kW
+        </span>
+      </div>
       <div>
         
       </div>
@@ -64,7 +73,11 @@ exports[`App renders and matches our snapshot 1`] = `
       }
     }
   >
-    Öl
+    <div
+      className="name"
+    >
+      Öl
+    </div>
     <div
       className="Measure"
       style={
@@ -73,40 +86,45 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              O in
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={60}
-      />
-      <span
-        className="unit"
-      >
-        °C
-      </span>
+      <div>
+        Eingangstemperatur
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                O in
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={60}
+        />
+        <span
+          className="unit"
+        >
+          °C
+        </span>
+      </div>
       <div>
         
       </div>
@@ -119,40 +137,45 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              O out
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={40}
-      />
-      <span
-        className="unit"
-      >
-        °C
-      </span>
+      <div>
+        Ausgangstemperatur
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                O out
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={40}
+        />
+        <span
+          className="unit"
+        >
+          °C
+        </span>
+      </div>
       <div>
         
       </div>
@@ -165,40 +188,45 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              M
-            </mi>
-            <mi>
-              O
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={1}
-      />
-      <span
-        className="unit"
-      >
-        kg/s
-      </span>
+      <div>
+        Massestrom
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                M
+              </mi>
+              <mi>
+                O
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={1}
+        />
+        <span
+          className="unit"
+        >
+          kg/s
+        </span>
+      </div>
       <div>
         
       </div>
@@ -211,40 +239,45 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              Q
-            </mi>
-            <mi>
-              O
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={60}
-      />
-      <span
-        className="unit"
-      >
-        l/min
-      </span>
+      <div>
+        Volumenstrom
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                Q
+              </mi>
+              <mi>
+                O
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={60}
+        />
+        <span
+          className="unit"
+        >
+          l/min
+        </span>
+      </div>
       <div>
         
       </div>
@@ -259,7 +292,11 @@ exports[`App renders and matches our snapshot 1`] = `
       }
     }
   >
-    Wasser
+    <div
+      className="name"
+    >
+      Wasser
+    </div>
     <div
       className="Measure"
       style={
@@ -268,40 +305,45 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              W in
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={20}
-      />
-      <span
-        className="unit"
-      >
-        °C
-      </span>
+      <div>
+        Eingangstemperatur
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                W in
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={20}
+        />
+        <span
+          className="unit"
+        >
+          °C
+        </span>
+      </div>
       <div>
         
       </div>
@@ -314,40 +356,45 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              W out
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={30}
-      />
-      <span
-        className="unit"
-      >
-        °C
-      </span>
+      <div>
+        Ausgangstemperatur
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                W out
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={30}
+        />
+        <span
+          className="unit"
+        >
+          °C
+        </span>
+      </div>
       <div>
         
       </div>
@@ -360,40 +407,45 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              M
-            </mi>
-            <mi>
-              W
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={1}
-      />
-      <span
-        className="unit"
-      >
-        kg/s
-      </span>
+      <div>
+        Massestrom
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                M
+              </mi>
+              <mi>
+                W
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={1}
+        />
+        <span
+          className="unit"
+        >
+          kg/s
+        </span>
+      </div>
       <div>
         
       </div>
@@ -406,40 +458,45 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              Q
-            </mi>
-            <mi>
-              W
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={60}
-      />
-      <span
-        className="unit"
-      >
-        l/min
-      </span>
+      <div>
+        Volumenstrom
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                Q
+              </mi>
+              <mi>
+                W
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={60}
+        />
+        <span
+          className="unit"
+        >
+          l/min
+        </span>
+      </div>
       <div>
         
       </div>
@@ -453,7 +510,11 @@ exports[`App renders and matches our snapshot 1`] = `
       }
     }
   >
-    Kühler
+    <div
+      className="name"
+    >
+      Kühler
+    </div>
     <div
       className="Measure"
       style={
@@ -462,35 +523,40 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <mi>
-            A
-          </mi>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={1}
-      />
-      <span
-        className="unit"
-      >
-        m²
-      </span>
+      <div>
+        Fläche
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <mi>
+              A
+            </mi>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={1}
+        />
+        <span
+          className="unit"
+        >
+          m²
+        </span>
+      </div>
       <div>
         
       </div>
@@ -503,35 +569,40 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <mi>
-            k
-          </mi>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={1}
-      />
-      <span
-        className="unit"
-      >
-        kW/m²K
-      </span>
+      <div>
+        Wärmeübergangskoeffizient
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <mi>
+              k
+            </mi>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={1}
+        />
+        <span
+          className="unit"
+        >
+          kW/m²K
+        </span>
+      </div>
       <div>
         
       </div>
@@ -545,45 +616,54 @@ exports[`App renders and matches our snapshot 1`] = `
       }
     }
   >
-    Öl Konstanten
+    <div
+      className="name"
+    >
+      Öl Konstanten
+    </div>
     <div
       className="Measure"
       style={Object {}}
     >
-      <input
-        checked={true}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              c
-            </mi>
-            <mi>
-              O
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={false}
-        onChange={[Function]}
-        readOnly={false}
-        type="text"
-        value={2}
-      />
-      <span
-        className="unit"
-      >
-        kJ/kgK
-      </span>
+      <div>
+        Wärmekapazität
+      </div>
+      <div>
+        <input
+          checked={true}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                c
+              </mi>
+              <mi>
+                O
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={false}
+          onChange={[Function]}
+          readOnly={false}
+          type="text"
+          value={2}
+        />
+        <span
+          className="unit"
+        >
+          kJ/kgK
+        </span>
+      </div>
       <div>
         
       </div>
@@ -592,40 +672,45 @@ exports[`App renders and matches our snapshot 1`] = `
       className="Measure"
       style={Object {}}
     >
-      <input
-        checked={true}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              p
-            </mi>
-            <mi>
-              O
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={false}
-        onChange={[Function]}
-        readOnly={false}
-        type="text"
-        value={1}
-      />
-      <span
-        className="unit"
-      >
-        kg/l
-      </span>
+      <div>
+        Dichte
+      </div>
+      <div>
+        <input
+          checked={true}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                p
+              </mi>
+              <mi>
+                O
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={false}
+          onChange={[Function]}
+          readOnly={false}
+          type="text"
+          value={1}
+        />
+        <span
+          className="unit"
+        >
+          kg/l
+        </span>
+      </div>
       <div>
         
       </div>
@@ -639,45 +724,54 @@ exports[`App renders and matches our snapshot 1`] = `
       }
     }
   >
-    Wasser Konstanten
+    <div
+      className="name"
+    >
+      Wasser Konstanten
+    </div>
     <div
       className="Measure"
       style={Object {}}
     >
-      <input
-        checked={true}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              c
-            </mi>
-            <mi>
-              W
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={false}
-        onChange={[Function]}
-        readOnly={false}
-        type="text"
-        value={4.18}
-      />
-      <span
-        className="unit"
-      >
-        kJ/kgK
-      </span>
+      <div>
+        Wärmekapazität
+      </div>
+      <div>
+        <input
+          checked={true}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                c
+              </mi>
+              <mi>
+                W
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={false}
+          onChange={[Function]}
+          readOnly={false}
+          type="text"
+          value={4.18}
+        />
+        <span
+          className="unit"
+        >
+          kJ/kgK
+        </span>
+      </div>
       <div>
         
       </div>
@@ -686,40 +780,45 @@ exports[`App renders and matches our snapshot 1`] = `
       className="Measure"
       style={Object {}}
     >
-      <input
-        checked={true}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              p
-            </mi>
-            <mi>
-              W
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={false}
-        onChange={[Function]}
-        readOnly={false}
-        type="text"
-        value={1}
-      />
-      <span
-        className="unit"
-      >
-        kg/l
-      </span>
+      <div>
+        Dichte
+      </div>
+      <div>
+        <input
+          checked={true}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                p
+              </mi>
+              <mi>
+                W
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={false}
+          onChange={[Function]}
+          readOnly={false}
+          type="text"
+          value={1}
+        />
+        <span
+          className="unit"
+        >
+          kg/l
+        </span>
+      </div>
       <div>
         
       </div>
@@ -733,7 +832,11 @@ exports[`App renders and matches our snapshot 1`] = `
       }
     }
   >
-    Automatische Größen
+    <div
+      className="name"
+    >
+      Automatische Größen
+    </div>
     <div
       className="Measure"
       style={
@@ -742,40 +845,45 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              log
-            </mi>
-          </msub>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={1}
-      />
-      <span
-        className="unit"
-      >
-        K
-      </span>
+      <div>
+        Durchschnittstemperatur
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                log
+              </mi>
+            </msub>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={1}
+        />
+        <span
+          className="unit"
+        >
+          K
+        </span>
+      </div>
       <div>
         
       </div>
@@ -788,35 +896,40 @@ exports[`App renders and matches our snapshot 1`] = `
         }
       }
     >
-      <input
-        checked={false}
-        className="input"
-        disabled={false}
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      >
-        <mrow>
-          <mi>
-            alpha
-          </mi>
-        </mrow>
-      </math>
-      <input
-        className="value"
-        disabled={true}
-        onChange={[Function]}
-        readOnly={true}
-        type="text"
-        value={1}
-      />
-      <span
-        className="unit"
-      >
-        
-      </span>
+      <div>
+        Alpha
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="input"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <mrow>
+            <mi>
+              alpha
+            </mi>
+          </mrow>
+        </math>
+        <input
+          className="value"
+          disabled={true}
+          onChange={[Function]}
+          readOnly={true}
+          type="text"
+          value={1}
+        />
+        <span
+          className="unit"
+        >
+          
+        </span>
+      </div>
       <div>
         
       </div>

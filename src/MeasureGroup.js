@@ -6,7 +6,7 @@ import Measure from './Measure'
 class MeasureGroup extends Component {
 	render () {
 		const {state, opt} = this.props
-		return <div className="MeasureGroup" style={opt.style}>{opt.name}
+		return <div className="MeasureGroup" style={opt.style}><div className="name">{opt.name}</div>
 			{
 				opt.childs
 					.map(n => ({...state[n], ...state.all, name: n}))

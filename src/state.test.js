@@ -4,12 +4,13 @@ import composeState from './state'
 describe('state', () => {
 	it('returns a state with the item', () => {
 		const state = composeState()
-			.compose('twin', 'kg', 42, true, <mrow><msub><mi>T</mi><mi>W in</mi></msub></mrow>)
+			.compose('twin', 'kg', 42, true, 'Eingangstemperatur', <mrow><msub><mi>T</mi><mi>W in</mi></msub></mrow>)
 		expect(state.twin).toEqual({
 			unit: 'kg',
 			input: true,
 			calculated: false,
 			value: 42,
+			longname: 'Eingangstemperatur',
 			symbol:
 				<math xmlns="http://www.w3.org/1998/Math/MathML">
 					<mrow>

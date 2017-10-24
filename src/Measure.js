@@ -16,16 +16,19 @@ class Measure extends Component {
 		inputToggled(name, !input)
 	}
 	render () {
-		const {unit, input, calculated, symbol, value, formul} = this.props.state
+		const {unit, input, calculated, symbol, value, longname, formul} = this.props.state
 		const style = {}
 		if (!input && !calculated) {
 			style.backgroundColor = 'gray'
 		}
 		return <div className="Measure" style={style}>
-			<input className="input" type="checkbox" checked={input} disabled={calculated} onChange={this.handleInputUpdate}/>
-			{symbol}
-			<input className="value" type="text" readOnly={!input} disabled={!input && !calculated} value={calculated ? value.toFixed(2) : value} onChange={this.handleValueUpdate}/>
-			<span className="unit">{unit}</span>
+			<div>{longname}</div>
+			<div>
+				<input className="input" type="checkbox" checked={input} disabled={calculated} onChange={this.handleInputUpdate}/>
+				{symbol}
+				<input className="value" type="text" readOnly={!input} disabled={!input && !calculated} value={calculated ? value.toFixed(2) : value} onChange={this.handleValueUpdate}/>
+				<span className="unit">{unit}</span>
+			</div>
 			<div>{formul}</div>
 		</div>
 	}

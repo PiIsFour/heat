@@ -4,6 +4,11 @@
 	justify-content: space-evenly;
 	align-items: center;
 	border: 2px solid gray;
-	padding: 1em;
+	padding: .5em;
 	/* margin: 1em; */
+}
+
+.MeasureGroup > .name {
+	margin: .5em;
+	font-size: 1.3em;
 }

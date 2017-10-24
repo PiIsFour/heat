@@ -1,12 +1,13 @@
 import React from 'react'
 
 class State {
-	compose (name, unit, value, active, symbol) {
+	compose (name, unit, value, input, longname, symbol) {
 		this[name] = {
-			unit: unit,
-			input: active,
+			unit,
+			input,
 			calculated: false,
-			value: value,
+			value,
+			longname,
 			symbol:
 				<math xmlns="http://www.w3.org/1998/Math/MathML">
 					{symbol}
