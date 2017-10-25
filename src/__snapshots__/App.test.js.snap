@@ -39,11 +39,9 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <mi>
-              P
-            </mi>
-          </mrow>
+          <mi>
+            P
+          </mi>
         </math>
         <input
           className="value"
@@ -100,16 +98,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                T
-              </mi>
-              <mi>
-                O in
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              O in
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -151,16 +147,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                T
-              </mi>
-              <mi>
-                O out
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              O out
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -202,16 +196,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                M
-              </mi>
-              <mi>
-                O
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              M
+            </mi>
+            <mi>
+              O
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -253,16 +245,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                Q
-              </mi>
-              <mi>
-                O
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              Q
+            </mi>
+            <mi>
+              O
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -319,16 +309,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                T
-              </mi>
-              <mi>
-                W in
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              W in
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -370,16 +358,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                T
-              </mi>
-              <mi>
-                W out
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              W out
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -421,16 +407,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                M
-              </mi>
-              <mi>
-                W
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              M
+            </mi>
+            <mi>
+              W
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -472,16 +456,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                Q
-              </mi>
-              <mi>
-                W
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              Q
+            </mi>
+            <mi>
+              W
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -537,11 +519,9 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <mi>
-              A
-            </mi>
-          </mrow>
+          <mi>
+            A
+          </mi>
         </math>
         <input
           className="value"
@@ -583,11 +563,9 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <mi>
-              k
-            </mi>
-          </mrow>
+          <mi>
+            k
+          </mi>
         </math>
         <input
           className="value"
@@ -639,16 +617,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                c
-              </mi>
-              <mi>
-                O
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              c
+            </mi>
+            <mi>
+              O
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -686,16 +662,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                p
-              </mi>
-              <mi>
-                O
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              ρ
+            </mi>
+            <mi>
+              O
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -747,16 +721,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                c
-              </mi>
-              <mi>
-                W
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              c
+            </mi>
+            <mi>
+              W
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -794,16 +766,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                p
-              </mi>
-              <mi>
-                W
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              ρ
+            </mi>
+            <mi>
+              W
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -859,16 +829,14 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <msub>
-              <mi>
-                T
-              </mi>
-              <mi>
-                log
-              </mi>
-            </msub>
-          </mrow>
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              log
+            </mi>
+          </msub>
         </math>
         <input
           className="value"
@@ -910,11 +878,9 @@ exports[`App renders and matches our snapshot 1`] = `
         <math
           xmlns="http://www.w3.org/1998/Math/MathML"
         >
-          <mrow>
-            <mi>
-              alpha
-            </mi>
-          </mrow>
+          <mi>
+            α
+          </mi>
         </math>
         <input
           className="value"

@@ -9,23 +9,23 @@ class App extends Component {
 	constructor (props) {
 		super(props)
 		const state = composeState()
-			.compose('P', 'kW', 55, false, 'Leistung', <mrow><mi>P</mi></mrow>)
-			.compose('twin', '°C', 20, false, 'Eingangstemperatur', <mrow><msub><mi>T</mi><mi>W in</mi></msub></mrow>)
-			.compose('twout', '°C', 30, false, 'Ausgangstemperatur', <mrow><msub><mi>T</mi><mi>W out</mi></msub></mrow>)
-			.compose('cw', 'kJ/kgK', 4.18, true, 'Wärmekapazität', <mrow><msub><mi>c</mi><mi>W</mi></msub></mrow>)
-			.compose('Mw', 'kg/s', 1, false, 'Massestrom', <mrow><msub><mi>M</mi><mi>W</mi></msub></mrow>)
-			.compose('toin', '°C', 60, false, 'Eingangstemperatur', <mrow><msub><mi>T</mi><mi>O in</mi></msub></mrow>)
-			.compose('toout', '°C', 40, false, 'Ausgangstemperatur', <mrow><msub><mi>T</mi><mi>O out</mi></msub></mrow>)
-			.compose('co', 'kJ/kgK', 2, true, 'Wärmekapazität', <mrow><msub><mi>c</mi><mi>O</mi></msub></mrow>)
-			.compose('Mo', 'kg/s', 1, false, 'Massestrom', <mrow><msub><mi>M</mi><mi>O</mi></msub></mrow>)
-			.compose('A', 'm²', 1, false, 'Fläche', <mrow><mi>A</mi></mrow>)
-			.compose('k', 'kW/m²K', 1, false, 'Wärmeübergangskoeffizient', <mrow><mi>k</mi></mrow>)
-			.compose('tlog', 'K', 1, false, 'Durchschnittstemperatur', <mrow><msub><mi>T</mi><mi>log</mi></msub></mrow>)
-			.compose('alpha', '', 1, false, 'Alpha', <mrow><mi>alpha</mi></mrow>)
-			.compose('pw', 'kg/l', 1, true, 'Dichte', <mrow><msub><mi>p</mi><mi>W</mi></msub></mrow>)
-			.compose('po', 'kg/l', 1, true, 'Dichte', <mrow><msub><mi>p</mi><mi>O</mi></msub></mrow>)
-			.compose('Qw', 'l/min', 60, false, 'Volumenstrom', <mrow><msub><mi>Q</mi><mi>W</mi></msub></mrow>)
-			.compose('Qo', 'l/min', 60, false, 'Volumenstrom', <mrow><msub><mi>Q</mi><mi>O</mi></msub></mrow>)
+			.compose('P', 'kW', 55, false, 'Leistung', <mi>P</mi>)
+			.compose('twin', '°C', 20, false, 'Eingangstemperatur', <msub><mi>T</mi><mi>W in</mi></msub>)
+			.compose('twout', '°C', 30, false, 'Ausgangstemperatur', <msub><mi>T</mi><mi>W out</mi></msub>)
+			.compose('cw', 'kJ/kgK', 4.18, true, 'Wärmekapazität', <msub><mi>c</mi><mi>W</mi></msub>)
+			.compose('Mw', 'kg/s', 1, false, 'Massestrom', <msub><mi>M</mi><mi>W</mi></msub>)
+			.compose('toin', '°C', 60, false, 'Eingangstemperatur', <msub><mi>T</mi><mi>O in</mi></msub>)
+			.compose('toout', '°C', 40, false, 'Ausgangstemperatur', <msub><mi>T</mi><mi>O out</mi></msub>)
+			.compose('co', 'kJ/kgK', 2, true, 'Wärmekapazität', <msub><mi>c</mi><mi>O</mi></msub>)
+			.compose('Mo', 'kg/s', 1, false, 'Massestrom', <msub><mi>M</mi><mi>O</mi></msub>)
+			.compose('A', 'm²', 1, false, 'Fläche', <mi>A</mi>)
+			.compose('k', 'kW/m²K', 1, false, 'Wärmeübergangskoeffizient', <mi>k</mi>)
+			.compose('tlog', 'K', 1, false, 'Durchschnittstemperatur', <msub><mi>T</mi><mi>log</mi></msub>)
+			.compose('alpha', '', 1, false, 'Alpha', <mi>α</mi>)
+			.compose('pw', 'kg/l', 1, true, 'Dichte', <msub><mi>ρ</mi><mi>W</mi></msub>)
+			.compose('po', 'kg/l', 1, true, 'Dichte', <msub><mi>ρ</mi><mi>O</mi></msub>)
+			.compose('Qw', 'l/min', 60, false, 'Volumenstrom', <msub><mi>Q</mi><mi>W</mi></msub>)
+			.compose('Qo', 'l/min', 60, false, 'Volumenstrom', <msub><mi>Q</mi><mi>O</mi></msub>)
 		state.all = {
 			valueChanged: (name, value) => {
 				const state = {...this.state}
@@ -42,33 +42,45 @@ class App extends Component {
 		}
 		this.state = state
 		this.calc = makeCalculator()
-			.add('P', ['twout', 'twin', 'cw', 'Mw'], i => (i.twout - i.twin) * i.cw * i.Mw, <mrow><mi>P</mi><mo>=</mo><mo>(</mo><msub><mi>T</mi><mi>W out</mi></msub><mo>-</mo><msub><mi>T</mi><mi>W in</mi></msub><mo>)</mo><mo>*</mo><msub><mi>c</mi><mi>W</mi></msub><mo>*</mo><msub><mi>M</mi><mi>O</mi></msub></mrow>)
-			.add('P', ['toout', 'toin', 'co', 'Mo'], i => (i.toin - i.toout) * i.co * i.Mo, <mrow><mi>P</mi><mo>=</mo><mo>(</mo><msub><mi>T</mi><mi>O out</mi></msub><mo>-</mo><msub><mi>T</mi><mi>O in</mi></msub><mo>)</mo><mo>*</mo><msub><mi>c</mi><mi>O</mi></msub><mo>*</mo><msub><mi>M</mi><mi>O</mi></msub></mrow>)
-			.add('Mw', ['twout', 'twin', 'cw', 'P'], i => i.P / (i.twout - i.twin) / i.cw, <mrow><msub><mi>M</mi><mi>W</mi></msub><mo>=</mo><mfrac><mi>P</mi><mrow><mo>(</mo><msub><mi>T</mi><mi>W out</mi></msub><mo>-</mo><msub><mi>T</mi><mi>W in</mi></msub><mo>)</mo><mo>*</mo><msub><mi>c</mi><mi>W</mi></msub></mrow></mfrac></mrow>)
-			.add('Mo', ['toout', 'toin', 'co', 'P'], i => i.P / (i.toin - i.toout) / i.co, <mrow><msub><mi>M</mi><mi>O</mi></msub><mo>=</mo><mfrac><mi>P</mi><mrow><mo>(</mo><msub><mi>T</mi><mi>O out</mi></msub><mo>-</mo><msub><mi>T</mi><mi>O in</mi></msub><mo>)</mo><mo>*</mo><msub><mi>c</mi><mi>O</mi></msub></mrow></mfrac></mrow>)
-			.add('cw', ['twout', 'twin', 'Mw', 'P'], i => i.P / (i.twout - i.twin) / i.Mw, <mrow><msub><mi>c</mi><mi>W</mi></msub><mo>=</mo><mfrac><mi>P</mi><mrow><mo>(</mo><msub><mi>T</mi><mi>W out</mi></msub><mo>-</mo><msub><mi>T</mi><mi>W in</mi></msub><mo>)</mo><mo>*</mo><msub><mi>M</mi><mi>W</mi></msub></mrow></mfrac></mrow>)
-			.add('co', ['toout', 'toin', 'Mo', 'P'], i => i.P / (i.toin - i.toout) / i.Mo, <mrow><msub><mi>c</mi><mi>O</mi></msub><mo>=</mo><mfrac><mi>P</mi><mrow><mo>(</mo><msub><mi>T</mi><mi>O out</mi></msub><mo>-</mo><msub><mi>T</mi><mi>O in</mi></msub><mo>)</mo><mo>*</mo><msub><mi>M</mi><mi>O</mi></msub></mrow></mfrac></mrow>)
-			.add('twout', ['twin', 'cw', 'Mw', 'P'], i => i.twin + (i.P / i.cw / i.Mw), <mrow><msub><mi>T</mi><mi>W out</mi></msub><mo>=</mo><msub><mi>T</mi><mi>W in</mi></msub><mo>+</mo><mfrac><mi>P</mi><mrow><msub><mi>c</mi><mi>W</mi></msub><mo>*</mo><msub><mi>M</mi><mi>W</mi></msub></mrow></mfrac></mrow>)
-			.add('twin', ['twout', 'cw', 'Mw', 'P'], i => i.twout - (i.P / i.cw / i.Mw), <mrow><msub><mi>T</mi><mi>W in</mi></msub><mo>=</mo><msub><mi>T</mi><mi>W out</mi></msub><mo>-</mo><mfrac><mi>P</mi><mrow><msub><mi>c</mi><mi>W</mi></msub><mo>*</mo><msub><mi>M</mi><mi>W</mi></msub></mrow></mfrac></mrow>)
-			.add('toin', ['toout', 'co', 'Mo', 'P'], i => i.toout + (i.P / i.co / i.Mo), <mrow><msub><mi>T</mi><mi>O in</mi></msub><mo>=</mo><msub><mi>T</mi><mi>O out</mi></msub><mo>+</mo><mfrac><mi>P</mi><mrow><msub><mi>c</mi><mi>O</mi></msub><mo>*</mo><msub><mi>M</mi><mi>O</mi></msub></mrow></mfrac></mrow>)
-			.add('toout', ['toin', 'co', 'Mo', 'P'], i => i.toin - (i.P / i.co / i.Mo), <mrow><msub><mi>T</mi><mi>O out</mi></msub><mo>=</mo><msub><mi>T</mi><mi>O in</mi></msub><mo>-</mo><mfrac><mi>P</mi><mrow><msub><mi>c</mi><mi>O</mi></msub><mo>*</mo><msub><mi>M</mi><mi>O</mi></msub></mrow></mfrac></mrow>)
+			.add('P', ['twout', 'twin', 'cw', 'Mw'], i => (i.twout - i.twin) * i.cw * i.Mw,
+				(me, i) => <mrow>{me}<mo>=</mo><mo>(</mo>{i.twout}<mo>-</mo>{i.twin}<mo>)</mo><mo>*</mo>{i.cw}<mo>*</mo>{i.Mw}</mrow>)
+			.add('P', ['toout', 'toin', 'co', 'Mo'], i => (i.toin - i.toout) * i.co * i.Mo,
+				(me, i) => <mrow>{me}<mo>=</mo><mo>(</mo>{i.toout}<mo>-</mo>{i.toin}<mo>)</mo><mo>*</mo>{i.co}<mo>*</mo>{i.Mo}</mrow>)
+			.add('Mw', ['twout', 'twin', 'cw', 'P'], i => i.P / (i.twout - i.twin) / i.cw,
+				(me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow><mo>(</mo>{i.twout}<mo>-</mo>{i.twin}<mo>)</mo><mo>*</mo>{i.cw}</mrow></mfrac></mrow>)
+			.add('Mo', ['toout', 'toin', 'co', 'P'], i => i.P / (i.toin - i.toout) / i.co,
+				(me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow><mo>(</mo>{i.toout}<mo>-</mo>{i.toin}<mo>)</mo><mo>*</mo>{i.co}</mrow></mfrac></mrow>)
+			.add('cw', ['twout', 'twin', 'Mw', 'P'], i => i.P / (i.twout - i.twin) / i.Mw,
+				(me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow><mo>(</mo>{i.twout}<mo>-</mo>{i.twin}<mo>)</mo><mo>*</mo>{i.Mw}</mrow></mfrac></mrow>)
+			.add('co', ['toout', 'toin', 'Mo', 'P'], i => i.P / (i.toin - i.toout) / i.Mo,
+				(me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow><mo>(</mo>{i.toout}<mo>-</mo>{i.toin}<mo>)</mo><mo>*</mo>{i.Mo}</mrow></mfrac></mrow>)
+			.add('twout', ['twin', 'cw', 'Mw', 'P'], i => i.twin + (i.P / i.cw / i.Mw),
+				(me, i) => <mrow>{me}<mo>=</mo>{i.twin}<mo>+</mo><mfrac>{i.P}<mrow>{i.cw}<mo>*</mo>{i.Mw}</mrow></mfrac></mrow>)
+			.add('twin', ['twout', 'cw', 'Mw', 'P'], i => i.twout - (i.P / i.cw / i.Mw),
+				(me, i) => <mrow>{me}<mo>=</mo>{i.twout}<mo>-</mo><mfrac>{i.P}<mrow>{i.cw}<mo>*</mo>{i.Mw}</mrow></mfrac></mrow>)
+			.add('toin', ['toout', 'co', 'Mo', 'P'], i => i.toout + (i.P / i.co / i.Mo),
+				(me, i) => <mrow>{me}<mo>=</mo>{i.toout}<mo>+</mo><mfrac>{i.P}<mrow>{i.co}<mo>*</mo>{i.Mo}</mrow></mfrac></mrow>)
+			.add('toout', ['toin', 'co', 'Mo', 'P'], i => i.toin - (i.P / i.co / i.Mo),
+				(me, i) => <mrow>{me}<mo>=</mo>{i.toin}<mo>-</mo><mfrac>{i.P}<mrow>{i.co}<mo>*</mo>{i.Mo}</mrow></mfrac></mrow>)
 			.add('tlog', ['twin', 'twout', 'toin', 'toout'], i => {
 				if (Math.abs(i.toin - i.twout - i.toout + i.twin) < 0.1) {
 					return i.toin - i.twout
 				}
 				return (i.toin - i.twout - i.toout + i.twin) / Math.log((i.toin - i.twout) / (i.toout - i.twin))
-			}, <mrow><msub><mi>T</mi><mi>log</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>T</mi><mi>O in</mi></msub><mo>-</mo><msub><mi>T</mi><mi>W out</mi></msub><mo>-</mo><msub><mi>T</mi><mi>O out</mi></msub><mo>+</mo><msub><mi>T</mi><mi>W in</mi></msub></mrow><mrow><mo>log</mo><mo>(</mo><mfrac><mrow><msub><mi>T</mi><mi>O in</mi></msub><mo>-</mo><msub><mi>T</mi><mi>W out</mi></msub></mrow><mrow><msub><mi>T</mi><mi>O out</mi></msub><mo>-</mo><msub><mi>T</mi><mi>W in</mi></msub></mrow></mfrac><mo>)</mo></mrow></mfrac></mrow>)
-			.add('P', ['A', 'k', 'tlog'], i => i.A * i.k * i.tlog, <mrow><mi>P</mi><mo>=</mo><mi>A</mi><mo>*</mo><mi>k</mi><mo>*</mo><msub><mi>T</mi><mi>log</mi></msub></mrow>)
-			.add('A', ['P', 'k', 'tlog'], i => i.P / i.k / i.tlog, <mrow><mi>A</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mi>k</mi><mo>*</mo><msub><mi>T</mi><mi>log</mi></msub></mrow></mfrac></mrow>)
-			.add('k', ['P', 'A', 'tlog'], i => i.P / i.A / i.tlog, <mrow><mi>k</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mi>A</mi><mo>*</mo><msub><mi>T</mi><mi>log</mi></msub></mrow></mfrac></mrow>)
-			.add('alpha', ['A', 'k', 'co', 'cw', 'Mo', 'Mw'], i => Math.exp(i.A * i.k * ((1 / i.co / i.Mo) - (1 / i.cw / i.Mw))), <mrow><mi>alpha</mi><mo>=</mo><mo>exp</mo><mo>(</mo><mi>A</mi><mo>*</mo><mi>k</mi><mo>*</mo><mo>(</mo><mfrac><mn>1</mn><mrow><msub><mi>c</mi><mi>O</mi></msub><mo>*</mo><msub><mi>M</mi><mi>O</mi></msub></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><msub><mi>c</mi><mi>W</mi></msub><mo>*</mo><msub><mi>M</mi><mi>W</mi></msub></mrow></mfrac><mo>)</mo><mo>)</mo></mrow>)
-			.add('P', ['alpha', 'toin', 'twin', 'co', 'cw', 'Mo', 'Mw'], i => (i.alpha - 1) * (i.toin - i.twin) / ((i.alpha / i.co / i.Mo) - (1 / i.cw / i.Mw)), <mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mo>(</mo><mi>alpha</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>(</mo><msub><mi>T</mi><mi>O in</mi></msub><mo>-</mo><msub><mi>T</mi><mi>W in</mi></msub><mo>)</mo></mrow><mrow><mo>(</mo><mfrac><mi>alpha</mi><mrow><msub><mi>c</mi><mi>O</mi></msub><mo>*</mo><msub><mi>M</mi><mi>O</mi></msub></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><msub><mi>c</mi><mi>W</mi></msub><mo>*</mo><msub><mi>M</mi><mi>W</mi></msub></mrow></mfrac><mo>)</mo></mrow></mfrac></mrow>)
-			.add('Mw', ['pw', 'Qw'], i => i.pw * i.Qw / 60, <mrow><msub><mi>M</mi><mi>W</mi></msub><mo>=</mo><msub><mi>p</mi><mi>W</mi></msub><mo>*</mo><msub><mi>Q</mi><mi>W</mi></msub></mrow>)
-			.add('Mo', ['po', 'Qo'], i => i.po * i.Qo / 60, <mrow><msub><mi>M</mi><mi>O</mi></msub><mo>=</mo><msub><mi>p</mi><mi>O</mi></msub><mo>*</mo><msub><mi>Q</mi><mi>O</mi></msub></mrow>)
-			.add('pw', ['Mw', 'Qw'], i => i.Mw / i.Qw * 60, <mrow><msub><mi>p</mi><mi>W</mi></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>W</mi></msub><msub><mi>Q</mi><mi>W</mi></msub></mfrac></mrow>)
-			.add('po', ['Mo', 'Qo'], i => i.Mo / i.Qo * 60, <mrow><msub><mi>p</mi><mi>O</mi></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>O</mi></msub><msub><mi>Q</mi><mi>O</mi></msub></mfrac></mrow>)
-			.add('Qw', ['Mw', 'pw'], i => i.Mw / i.pw * 60, <mrow><msub><mi>Q</mi><mi>W</mi></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>W</mi></msub><msub><mi>p</mi><mi>W</mi></msub></mfrac></mrow>)
-			.add('Qo', ['Mo', 'po'], i => i.Mo / i.po * 60, <mrow><msub><mi>Q</mi><mi>O</mi></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>O</mi></msub><msub><mi>p</mi><mi>O</mi></msub></mfrac></mrow>)
+			}, (me, i) => <mrow>{me}<mo>=</mo><mfrac><mrow>{i.toin}<mo>-</mo>{i.twout}<mo>-</mo>{i.toout}<mo>+</mo>{i.twin}</mrow><mrow><mo>log</mo><mo>(</mo><mfrac><mrow>{i.toin}<mo>-</mo>{i.twout}</mrow><mrow>{i.toout}<mo>-</mo>{i.twin}</mrow></mfrac><mo>)</mo></mrow></mfrac></mrow>)
+			.add('P', ['A', 'k', 'tlog'], i => i.A * i.k * i.tlog, (me, i) => <mrow>{me}<mo>=</mo>{i.A}<mo>*</mo>{i.k}<mo>*</mo>{i.tlog}</mrow>)
+			.add('A', ['P', 'k', 'tlog'], i => i.P / i.k / i.tlog, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow>{i.k}<mo>*</mo>{i.tlog}</mrow></mfrac></mrow>)
+			.add('k', ['P', 'A', 'tlog'], i => i.P / i.A / i.tlog, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow>{i.A}<mo>*</mo>{i.tlog}</mrow></mfrac></mrow>)
+			.add('alpha', ['A', 'k', 'co', 'cw', 'Mo', 'Mw'], i => Math.exp(i.A * i.k * ((1 / i.co / i.Mo) - (1 / i.cw / i.Mw))),
+				(me, i) => <mrow>{me}<mo>=</mo><mo>exp</mo><mo>(</mo>{i.A}<mo>*</mo>{i.k}<mo>*</mo><mo>(</mo><mfrac><mn>1</mn><mrow>{i.co}<mo>*</mo>{i.Mo}</mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow>{i.cw}<mo>*</mo>{i.Mw}</mrow></mfrac><mo>)</mo><mo>)</mo></mrow>)
+			.add('P', ['alpha', 'toin', 'twin', 'co', 'cw', 'Mo', 'Mw'], i => (i.alpha - 1) * (i.toin - i.twin) / ((i.alpha / i.co / i.Mo) - (1 / i.cw / i.Mw)),
+				(me, i) => <mrow>{me}<mo>=</mo><mfrac><mrow><mo>(</mo>{i.alpha}<mo>-</mo><mn>1</mn><mo>)</mo><mo>(</mo>{i.toin}<mo>-</mo>{i.twin}<mo>)</mo></mrow><mrow><mo>(</mo><mfrac>{i.alpha}<mrow>{i.co}<mo>*</mo>{i.Mo}</mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow>{i.cw}<mo>*</mo>{i.Mw}</mrow></mfrac><mo>)</mo></mrow></mfrac></mrow>)
+			.add('Mw', ['pw', 'Qw'], i => i.pw * i.Qw / 60, (me, i) => <mrow>{me}<mo>=</mo>{i.pw}<mo>*</mo>{i.Qw}</mrow>)
+			.add('Mo', ['po', 'Qo'], i => i.po * i.Qo / 60, (me, i) => <mrow>{me}<mo>=</mo>{i.po}<mo>*</mo>{i.Qo}</mrow>)
+			.add('pw', ['Mw', 'Qw'], i => i.Mw / i.Qw * 60, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.Mw}{i.Qw}</mfrac></mrow>)
+			.add('po', ['Mo', 'Qo'], i => i.Mo / i.Qo * 60, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.Mo}{i.Qo}</mfrac></mrow>)
+			.add('Qw', ['Mw', 'pw'], i => i.Mw / i.pw * 60, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.Mw}{i.pw}</mfrac></mrow>)
+			.add('Qo', ['Mo', 'po'], i => i.Mo / i.po * 60, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.Mo}{i.po}</mfrac></mrow>)
 	}
 	render () {
 		const opt = [

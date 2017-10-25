@@ -1,5 +1,3 @@
-import React from 'react'
-
 class State {
 	compose (name, unit, value, input, longname, symbol) {
 		this[name] = {
@@ -8,10 +6,7 @@ class State {
 			calculated: false,
 			value,
 			longname,
-			symbol:
-				<math xmlns="http://www.w3.org/1998/Math/MathML">
-					{symbol}
-				</math>,
+			symbol,
 			formul: ''
 		}
 		return this

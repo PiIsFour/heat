@@ -10,12 +10,7 @@ describe('Measure', () => {
 		unit: 'kg',
 		input: false,
 		value: 42,
-		symbol:
-			<math xmlns="http://www.w3.org/1998/Math/MathML">
-				<mrow>
-					<msub><mi>T</mi><mi>W in</mi></msub>
-				</mrow>
-			</math>,
+		symbol: <msub><mi>T</mi><mi>W in</mi></msub>,
 		valueChanged: jest.fn(),
 		inputToggled: jest.fn()
 	}

@@ -25,7 +25,7 @@ class Measure extends Component {
 			<div>{longname}</div>
 			<div>
 				<input className="input" type="checkbox" checked={input} disabled={calculated} onChange={this.handleInputUpdate}/>
-				{symbol}
+				<math xmlns="http://www.w3.org/1998/Math/MathML">{symbol}</math>
 				<input className="value" type="text" readOnly={!input} disabled={!input && !calculated} value={calculated ? value.toFixed(2) : value} onChange={this.handleValueUpdate}/>
 				<span className="unit">{unit}</span>
 			</div>

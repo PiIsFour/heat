@@ -1,6 +1,5 @@
 .Measure {
 	border: 2px solid gray;
-	padding: .5em;
 	margin: .5em;
 	text-align: center;
 }
@@ -13,5 +12,5 @@
 }
 
 .Measure > div {
-	margin: .5em;
+	margin: 1em;
 }

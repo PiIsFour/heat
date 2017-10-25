@@ -21,16 +21,14 @@ exports[`Measure renders and matches our snapshot 1`] = `
     <math
       xmlns="http://www.w3.org/1998/Math/MathML"
     >
-      <mrow>
-        <msub>
-          <mi>
-            T
-          </mi>
-          <mi>
-            W in
-          </mi>
-        </msub>
-      </mrow>
+      <msub>
+        <mi>
+          T
+        </mi>
+        <mi>
+          W in
+        </mi>
+      </msub>
     </math>
     <input
       className="value"
