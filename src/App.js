@@ -67,7 +67,7 @@ class App extends Component {
 					return i.toin - i.twout
 				}
 				return (i.toin - i.twout - i.toout + i.twin) / Math.log((i.toin - i.twout) / (i.toout - i.twin))
-			}, (me, i) => <mrow>{me}<mo>=</mo><mfrac><mrow>{i.toin}<mo>-</mo>{i.twout}<mo>-</mo>{i.toout}<mo>+</mo>{i.twin}</mrow><mrow><mo>log</mo><mo>(</mo><mfrac><mrow>{i.toin}<mo>-</mo>{i.twout}</mrow><mrow>{i.toout}<mo>-</mo>{i.twin}</mrow></mfrac><mo>)</mo></mrow></mfrac></mrow>)
+			}, (me, i) => <mrow>{me}<mo>=</mo><mfrac><mrow>{i.toin}<mo>-</mo>{i.twout}<mo>-</mo>{i.toout}<mo>+</mo>{i.twin}</mrow><mrow><mo>ln</mo><mo>(</mo><mfrac><mrow>{i.toin}<mo>-</mo>{i.twout}</mrow><mrow>{i.toout}<mo>-</mo>{i.twin}</mrow></mfrac><mo>)</mo></mrow></mfrac></mrow>)
 			.add('P', ['A', 'k', 'tlog'], i => i.A * i.k * i.tlog, (me, i) => <mrow>{me}<mo>=</mo>{i.A}<mo>*</mo>{i.k}<mo>*</mo>{i.tlog}</mrow>)
 			.add('A', ['P', 'k', 'tlog'], i => i.P / i.k / i.tlog, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow>{i.k}<mo>*</mo>{i.tlog}</mrow></mfrac></mrow>)
 			.add('k', ['P', 'A', 'tlog'], i => i.P / i.A / i.tlog, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow>{i.A}<mo>*</mo>{i.tlog}</mrow></mfrac></mrow>)
