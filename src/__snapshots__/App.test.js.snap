@@ -36,13 +36,15 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <mi>
-            P
-          </mi>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <mi>
+              P
+            </mi>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -95,18 +97,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              O in
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                O in
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -144,18 +148,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              O out
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                O out
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -193,18 +199,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              M
-            </mi>
-            <mi>
-              O
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                M
+              </mi>
+              <mi>
+                O
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -242,18 +250,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              Q
-            </mi>
-            <mi>
-              O
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                Q
+              </mi>
+              <mi>
+                O
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -306,18 +316,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              W in
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                W in
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -355,18 +367,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              W out
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                W out
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -404,18 +418,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              M
-            </mi>
-            <mi>
-              W
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                M
+              </mi>
+              <mi>
+                W
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -453,18 +469,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              Q
-            </mi>
-            <mi>
-              W
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                Q
+              </mi>
+              <mi>
+                W
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -516,13 +534,15 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <mi>
-            A
-          </mi>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <mi>
+              A
+            </mi>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -560,13 +580,15 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <mi>
-            k
-          </mi>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <mi>
+              k
+            </mi>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -614,18 +636,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              c
-            </mi>
-            <mi>
-              O
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                c
+              </mi>
+              <mi>
+                O
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={false}
@@ -659,18 +683,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              ρ
-            </mi>
-            <mi>
-              O
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                ρ
+              </mi>
+              <mi>
+                O
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={false}
@@ -718,18 +744,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              c
-            </mi>
-            <mi>
-              W
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                c
+              </mi>
+              <mi>
+                W
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={false}
@@ -763,18 +791,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              ρ
-            </mi>
-            <mi>
-              W
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                ρ
+              </mi>
+              <mi>
+                W
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={false}
@@ -826,18 +856,20 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <msub>
-            <mi>
-              T
-            </mi>
-            <mi>
-              log
-            </mi>
-          </msub>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <msub>
+              <mi>
+                T
+              </mi>
+              <mi>
+                log
+              </mi>
+            </msub>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}
@@ -875,13 +907,15 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        <math
-          xmlns="http://www.w3.org/1998/Math/MathML"
-        >
-          <mi>
-            α
-          </mi>
-        </math>
+        <span>
+          <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
+            <mi>
+              α
+            </mi>
+          </math>
+        </span>
         <input
           className="value"
           disabled={true}

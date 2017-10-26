@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Formula renders and matches our snapshot 1`] = `
+<span>
+  <math
+    xmlns="http://www.w3.org/1998/Math/MathML"
+  >
+    <mn>
+      1
+    </mn>
+  </math>
+</span>
+`;

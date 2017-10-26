@@ -7,7 +7,7 @@ import Measure from './Measure'
 import composeState from './state'
 
 describe('MeasureGroup', () => {
-	const state = composeState().compose('twin', 'kg', 42, <mrow><msub><mi>T</mi><mi>W in</mi></msub></mrow>)
+	const state = composeState().compose('twin', 'kg', 42, false, 'Temperatur', <msub><mi>T</mi><mi>W in</mi></msub>)
 	state.all = {
 		valueChanged: jest.fn(),
 		inputToggled: jest.fn()

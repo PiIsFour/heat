@@ -18,18 +18,20 @@ exports[`Measure renders and matches our snapshot 1`] = `
       onChange={[Function]}
       type="checkbox"
     />
-    <math
-      xmlns="http://www.w3.org/1998/Math/MathML"
-    >
-      <msub>
-        <mi>
-          T
-        </mi>
-        <mi>
-          W in
-        </mi>
-      </msub>
-    </math>
+    <span>
+      <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      >
+        <msub>
+          <mi>
+            T
+          </mi>
+          <mi>
+            W in
+          </mi>
+        </msub>
+      </math>
+    </span>
     <input
       className="value"
       disabled={true}
@@ -44,6 +46,8 @@ exports[`Measure renders and matches our snapshot 1`] = `
       kg
     </span>
   </div>
-  <div />
+  <div>
+    
+  </div>
 </div>
 `;

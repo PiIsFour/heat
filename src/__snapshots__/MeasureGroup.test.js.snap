@@ -12,36 +12,42 @@ exports[`MeasureGroup renders and matches our snapshot 1`] = `
   </div>
   <div
     className="Measure"
-    style={Object {}}
+    style={
+      Object {
+        "backgroundColor": "gray",
+      }
+    }
   >
-    <div />
+    <div>
+      Temperatur
+    </div>
     <div>
       <input
-        checked={
-          <mrow>
-            <msub>
-              <mi>
-                T
-              </mi>
-              <mi>
-                W in
-              </mi>
-            </msub>
-          </mrow>
-        }
+        checked={false}
         className="input"
         disabled={false}
         onChange={[Function]}
         type="checkbox"
       />
-      <math
-        xmlns="http://www.w3.org/1998/Math/MathML"
-      />
+      <span>
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
+          <msub>
+            <mi>
+              T
+            </mi>
+            <mi>
+              W in
+            </mi>
+          </msub>
+        </math>
+      </span>
       <input
         className="value"
-        disabled={false}
+        disabled={true}
         onChange={[Function]}
-        readOnly={false}
+        readOnly={true}
         type="text"
         value={42}
       />

@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import './Measure.css'
 
+import Formula from './Formula'
+
 class Measure extends Component {
 	constructor (props) {
 		super(props)
@@ -25,11 +27,11 @@ class Measure extends Component {
 			<div>{longname}</div>
 			<div>
 				<input className="input" type="checkbox" checked={input} disabled={calculated} onChange={this.handleInputUpdate}/>
-				<math xmlns="http://www.w3.org/1998/Math/MathML">{symbol}</math>
+				<Formula>{symbol}</Formula>
 				<input className="value" type="text" readOnly={!input} disabled={!input && !calculated} value={calculated ? value.toFixed(2) : value} onChange={this.handleValueUpdate}/>
 				<span className="unit">{unit}</span>
 			</div>
-			<div>{formul}</div>
+			<div><Formula>{formul}</Formula></div>
 		</div>
 	}
 }
