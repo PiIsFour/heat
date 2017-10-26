@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import GithubCorner from 'react-github-corner'
 import './App.css'
 
 import MeasureGroup from './MeasureGroup'
@@ -95,6 +96,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				{opt.map(o => <MeasureGroup key={o.name} state={this.state} opt={o}/>)}
+				<GithubCorner href="https://github.com/PiIsFour/heat" bannerColor="#64CEAA" octoColor="#fff" size={80} direction="right" />
 			</div>
 		)
 	}
