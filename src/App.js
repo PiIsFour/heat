@@ -82,6 +82,7 @@ class App extends Component {
 			.add('po', ['Mo', 'Qo'], i => i.Mo / i.Qo * 60, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.Mo}{i.Qo}</mfrac></mrow>)
 			.add('Qw', ['Mw', 'pw'], i => i.Mw / i.pw * 60, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.Mw}{i.pw}</mfrac></mrow>)
 			.add('Qo', ['Mo', 'po'], i => i.Mo / i.po * 60, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.Mo}{i.po}</mfrac></mrow>)
+			.add('tlog', ['A', 'k', 'P'], i => i.P / i.A / i.k, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow>{i.A}<mo>*</mo>{i.k}</mrow></mfrac></mrow>)
 	}
 	render () {
 		const opt = [
