@@ -41,6 +41,7 @@ class App extends Component {
 				this.setState(state)
 			}
 		}
+		state.update = false
 		this.state = state
 		this.calc = makeCalculator()
 			.add('P', ['twout', 'twin', 'cw', 'Mw'], i => (i.twout - i.twin) * i.cw * i.Mw,
@@ -96,6 +97,7 @@ class App extends Component {
 		]
 		return (
 			<div className="App">
+				{this.state.update ? <div className="notice">Neue Version verfügbar. Seite bitte neu laden.</div> : ''}
 				{opt.map(o => <MeasureGroup key={o.name} state={this.state} opt={o}/>)}
 				<GithubCorner href="https://github.com/PiIsFour/heat" bannerColor="#64CEAA" octoColor="#fff" size={80} direction="right" />
 			</div>

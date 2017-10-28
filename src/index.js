@@ -4,5 +4,13 @@ import './index.css'
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 
-ReactDOM.render(<App />, document.getElementById('root'))
-registerServiceWorker()
+let myApp = ReactDOM.render(<App/>, document.getElementById('root'))
+
+function onUpdate () {
+	myApp.setState({update: true})
+	window.setTimeout(() => {
+		myApp.setState({update: false})
+	}, 30000)
+}
+
+registerServiceWorker(onUpdate)

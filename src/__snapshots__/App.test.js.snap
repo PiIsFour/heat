@@ -4,6 +4,7 @@ exports[`App renders and matches our snapshot 1`] = `
 <div
   className="App"
 >
+  
   <div
     className="MeasureGroup"
     style={
