@@ -7,9 +7,15 @@ import registerServiceWorker from './registerServiceWorker'
 let myApp = ReactDOM.render(<App/>, document.getElementById('root'))
 
 function onUpdate () {
-	myApp.setState({update: true})
+	myApp.setState({all: {
+		...myApp.state.all,
+		update: true
+	}})
 	window.setTimeout(() => {
-		myApp.setState({update: false})
+		myApp.setState({all: {
+			...myApp.state.all,
+			update: false
+		}})
 	}, 30000)
 }
 
