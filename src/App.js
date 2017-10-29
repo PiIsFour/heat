@@ -84,6 +84,48 @@ class App extends Component {
 			.add('Qw', ['Mw', 'pw'], i => i.Mw / i.pw * 60, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.Mw}{i.pw}</mfrac></mrow>)
 			.add('Qo', ['Mo', 'po'], i => i.Mo / i.po * 60, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.Mo}{i.po}</mfrac></mrow>)
 			.add('tlog', ['A', 'k', 'P'], i => i.P / i.A / i.k, (me, i) => <mrow>{me}<mo>=</mo><mfrac>{i.P}<mrow>{i.A}<mo>*</mo>{i.k}</mrow></mfrac></mrow>)
+			.add('twout', ['tlog', 'twin', 'toin', 'toout'], i => {
+				const func = twout => {
+					if (Math.abs(i.toin - twout - i.toout + i.twin) < 0.1) {
+						return i.toin - twout
+					}
+					return (i.toin - twout - i.toout + i.twin) / Math.log((i.toin - twout) / (i.toout - i.twin))
+				}
+				let tmin = i.twin
+				let tmax = i.toin
+				let iterations = 0
+				while (iterations < 200) {
+					let t = (tmin + tmax) / 2
+					if (func(t) < i.tlog) {
+						tmax = t
+					} else {
+						tmin = t
+					}
+					iterations++
+				}
+				return (tmin + tmax) / 2
+			}, (me, i) => <mrow><mn>Numärische Näherung</mn></mrow>)
+			.add('toout', ['tlog', 'twin', 'toin', 'twout'], i => {
+				const func = toout => {
+					if (Math.abs(i.toin - i.twout - toout + i.twin) < 0.1) {
+						return i.toin - i.twout
+					}
+					return (i.toin - i.twout - toout + i.twin) / Math.log((i.toin - i.twout) / (toout - i.twin))
+				}
+				let tmin = i.twin
+				let tmax = i.toin
+				let iterations = 0
+				while (iterations < 200) {
+					let t = (tmin + tmax) / 2
+					if (func(t) < i.tlog) {
+						tmin = t
+					} else {
+						tmax = t
+					}
+					iterations++
+				}
+				return (tmin + tmax) / 2
+			}, (me, i) => <mrow><mn>Numärische Näherung</mn></mrow>)
 	}
 	render () {
 		const opt = [
