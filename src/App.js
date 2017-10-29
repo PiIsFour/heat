@@ -135,7 +135,7 @@ class App extends Component {
 			{name: 'Kühler', childs: ['A', 'k'], style: {gridColumn: '2 / span 1'}},
 			{name: 'Öl Konstanten', childs: ['co', 'po'], style: {gridColumn: '1 / span 1'}},
 			{name: 'Wasser Konstanten', childs: ['cw', 'pw'], style: {gridColumn: '3 / span 1'}},
-			{name: 'Automatische Größen', childs: ['tlog', 'alpha'], style: {gridColumn: '2 / span 1'}}
+			{name: 'Automatische Größen', childs: ['tlog', 'alpha'], style: {gridColumn: '2 / span 1'}, inactive: true}
 		]
 		return (
 			<div className="App">

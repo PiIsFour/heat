@@ -9,7 +9,7 @@ class MeasureGroup extends Component {
 		return <div className="MeasureGroup" style={opt.style}><div className="name">{opt.name}</div>
 			{
 				opt.childs
-					.map(n => ({...state[n], ...state.all, name: n}))
+					.map(n => ({...state[n], ...state.all, name: n, inactive: opt.inactive}))
 					.map(state => (<Measure key={state.name} state={state}/>))
 			}
 		</div>

@@ -25,7 +25,7 @@ exports[`MeasureGroup renders and matches our snapshot 1`] = `
       <input
         checked={false}
         className="input"
-        disabled={false}
+        disabled={undefined}
         onChange={[Function]}
         type="checkbox"
       />
