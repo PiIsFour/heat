@@ -37,6 +37,7 @@ class App extends Component {
 			inputToggled: (name, input) => {
 				const state = {...this.state}
 				state[name].input = input
+				state[name].value = Number(state[name].value).toFixed(2)
 				this.calc.run(state)
 				this.setState(state)
 			},

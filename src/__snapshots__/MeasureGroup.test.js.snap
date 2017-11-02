@@ -49,7 +49,7 @@ exports[`MeasureGroup renders and matches our snapshot 1`] = `
         onChange={[Function]}
         readOnly={true}
         type="text"
-        value={42}
+        value="42.00"
       />
       <span
         className="unit"

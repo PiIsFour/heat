@@ -52,7 +52,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={55}
+          value="55.00"
         />
         <span
           className="unit"
@@ -118,7 +118,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={60}
+          value="60.00"
         />
         <span
           className="unit"
@@ -169,7 +169,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={40}
+          value="40.00"
         />
         <span
           className="unit"
@@ -220,7 +220,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={1}
+          value="1.00"
         />
         <span
           className="unit"
@@ -271,7 +271,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={60}
+          value="60.00"
         />
         <span
           className="unit"
@@ -337,7 +337,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={20}
+          value="20.00"
         />
         <span
           className="unit"
@@ -388,7 +388,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={30}
+          value="30.00"
         />
         <span
           className="unit"
@@ -439,7 +439,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={1}
+          value="1.00"
         />
         <span
           className="unit"
@@ -490,7 +490,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={60}
+          value="60.00"
         />
         <span
           className="unit"
@@ -550,7 +550,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={1}
+          value="1.00"
         />
         <span
           className="unit"
@@ -596,7 +596,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={1}
+          value="1.00"
         />
         <span
           className="unit"
@@ -877,7 +877,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={1}
+          value="1.00"
         />
         <span
           className="unit"
@@ -923,7 +923,7 @@ exports[`App renders and matches our snapshot 1`] = `
           onChange={[Function]}
           readOnly={true}
           type="text"
-          value={1}
+          value="1.00"
         />
         <span
           className="unit"
